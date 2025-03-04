@@ -1,0 +1,164 @@
+.navbar-brand {
+    font-size: 50px; 
+    font-weight: bold;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 100vw) {
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .col-md-12 {
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.rog {
+    display: inline-block;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.typewriter-chosen {
+    display: inline-block;
+}
+
+.typewriter-chosen::before {
+    content: '';
+    animation: TypewriterChosen 5s steps(20) 1s infinite alternate, TypewriterChosenDelete 5s steps(20) 6s infinite alternate;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+
+@keyframes TypewriterChosen {
+    0%  { content: '|'; }
+    10% { content: 'C|'; }
+    20% { content: 'Ch|'; }
+    30% { content: 'Cho|'; }
+    40% { content: 'Chos|'; }
+    50% { content: 'Chosen|'; }
+    60% { content: 'Chosen |'; }
+    70% { content: 'Chosen b|'; }
+    80% { content: 'Chosen by|'; }
+    90% { content: 'Chosen by t|'; }
+    100%{ content: 'Chosen by the users|'; }
+}
+
+@keyframes TypewriterChosenDelete {
+    0%  { content: 'Chosen by the users|'; }
+    10% { content: 'Chosen by the user|'; }
+    20% { content: 'Chosen by the use|'; }
+    30% { content: 'Chosen by the us|'; }
+    40% { content: 'Chosen by the u|'; }
+    50% { content: 'Chosen by the |'; }
+    60% { content: 'Chosen by th|'; }
+    70% { content: 'Chosen by t|'; }
+    80% { content: 'Chosen by |'; }
+    90% { content: 'Chosen b|'; }
+    100%{ content: 'Chosen |'; }
+}
+
+.carousel {
+    min-height: 20vh;
+}
+
+.carousel-item {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service {
+    height: 100px;
+    object-fit: cover;
+    min-height: 50vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.progress-bar-blue {
+    background-color: blue;
+}
+
+.progress-bar-yellow {
+    background-color: yellow;
+}
+
+.progress-bar-green {
+    background-color: green;
+}
+
+.progress-bar-red {
+    background-color: red;
+}
+
+.service {
+    height: 100px;
+    object-fit: cover;
+    min-height: 50vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
